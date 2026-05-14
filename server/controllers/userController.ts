@@ -124,7 +124,7 @@ export const createUserProject = async (req: Request, res: Response) => {
 
     // Generate website code
     const codeGenerationResponse = await openai.chat.completions.create({
-      model: "openai/gpt-4o-mini",
+      model:"openai/gpt-4o-mini",
       messages: [
         {
           role: "system",
